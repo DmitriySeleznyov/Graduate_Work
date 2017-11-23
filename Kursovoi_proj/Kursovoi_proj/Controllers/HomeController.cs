@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using WebPortal_Music.Contracts.DataContracts;
+using WebPortal_Music.DAL.DataBase;
 
 namespace Kursovoi_proj.Controllers
 {
@@ -10,6 +12,11 @@ namespace Kursovoi_proj.Controllers
     {
         public ActionResult Index()
         {
+            using (var context = new WebPortalContext())
+            {
+                context.User.Add(new Users() { UsersID = 1, FirstName = "About", LastName = "s",Email = "dimkin_7@mail.ru", Phone = 123 });
+                var a = context.User;
+            }
             return View();
         }
 

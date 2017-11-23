@@ -12,7 +12,6 @@ namespace WebPortal_Music.Contracts.DataContracts
         [Key]
         public int Comment_Id { get; set; }
         public string Comment_Description { get; set; }
-        public DateTime Data { get; set; }
-        public DateTime Time { get; set; }
+        public DateTime Date_Time { get; set; }
     }
 }

@@ -13,10 +13,12 @@ namespace WebPortal_Music.Contracts.DataContracts
         public int UsersID { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Address_email { get; set; }
+        public string Email { get; set; }
         public long Phone { get; set; }
        
-        //public ICollection<Order> Orders { get; set; }
+        public ICollection<Music> Musics { get; set; }
+
+        public ICollection<Comments> Comment { get; set; }
 
     }
 }
