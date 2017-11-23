@@ -1,0 +1,38 @@
+﻿@using Kursovoi_proj.Models
+
+@model IEnumerable<UserModel>
+
+@{
+    ViewBag.Title = "Пользователи";
+}
+
+<h2>Пользователи</h2>
+
+<table class="table">
+    <tr>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Адрес</th>
+        <th>Номер телефона</th>
+        <th>Скидка</th>
+        <th>Действия</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (UserModel user in Model)
+        {
+            <tr>
+                <td>@user.LastName</td>
+                <td>@user.FirstName</td>
+                <td>@user.Email</td>
+                <td>@user.Phone</td>
+                <td>
+                    @Html.ActionLink("Details", "Details", "User", new { id = @user.UsersID }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Delete", "Delete", "User", new { id = @user.UsersID }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Edit", "Edit", "User", new { id = @user.UsersID }, new { @class = "btn btn-default" })
+                </td>
+            </tr>
+        }
+    }
+</table>
+@Html.ActionLink("Add", "Add", "User", new { @class = "btn btn-default" })
