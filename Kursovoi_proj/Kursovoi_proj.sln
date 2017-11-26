@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPortal_Music.Contracts",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPortal_Music.DAL", "WebPortal_Music.DAL\WebPortal_Music.DAL.csproj", "{27214C80-F983-4B9B-83DB-D503EA394CE6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web_PortalTest", "Web_PortalTest\Web_PortalTest.csproj", "{9767A2B9-AB09-49A1-B2A5-E06B5656EF3A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{27214C80-F983-4B9B-83DB-D503EA394CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27214C80-F983-4B9B-83DB-D503EA394CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27214C80-F983-4B9B-83DB-D503EA394CE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9767A2B9-AB09-49A1-B2A5-E06B5656EF3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9767A2B9-AB09-49A1-B2A5-E06B5656EF3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9767A2B9-AB09-49A1-B2A5-E06B5656EF3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9767A2B9-AB09-49A1-B2A5-E06B5656EF3A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
