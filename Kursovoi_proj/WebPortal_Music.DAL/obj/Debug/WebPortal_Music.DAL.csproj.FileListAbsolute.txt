@@ -10,3 +10,16 @@ C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\b
 C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\obj\Debug\WebPortal_Music.DAL.csprojResolveAssemblyReference.cache
 C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\obj\Debug\WebPortal_Music.DAL.dll
 C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\obj\Debug\WebPortal_Music.DAL.pdb
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\WebPortal_Music.DAL.dll.config
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\WebPortal_Music.DAL.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\WebPortal_Music.DAL.pdb
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\EntityFramework.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\WebPortal_Music.Contracts.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\WebPortal_Music.Contracts.pdb
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\WebPortal_Music.Contracts.dll.config
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\EntityFramework.xml
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\obj\Debug\WebPortal_Music.DAL.csprojResolveAssemblyReference.cache
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\obj\Debug\WebPortal_Music.DAL.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.DAL\obj\Debug\WebPortal_Music.DAL.pdb

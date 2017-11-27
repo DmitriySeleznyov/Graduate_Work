@@ -8,3 +8,13 @@ C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contr
 C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\obj\Debug\WebPortal_Music.Contracts.dll
 C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\obj\Debug\WebPortal_Music.Contracts.pdb
 C:\Users\dimkin_7\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\obj\Debug\WebPortal_Music.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\WebPortal_Music.Contracts.dll.config
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\WebPortal_Music.Contracts.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\WebPortal_Music.Contracts.pdb
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\EntityFramework.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\EntityFramework.xml
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\obj\Debug\WebPortal_Music.Contracts.csprojResolveAssemblyReference.cache
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\obj\Debug\WebPortal_Music.Contracts.dll
+C:\Users\artyo\Source\Repos\Graduate_Work\Kursovoi_proj\WebPortal_Music.Contracts\obj\Debug\WebPortal_Music.Contracts.pdb

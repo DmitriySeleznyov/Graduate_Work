@@ -13,13 +13,13 @@ namespace Kursovoi_proj.Controllers
 {
     public class UserController: Controller
     {
-        private readonly WebPortalContext context = new WebPortalContext();
         private readonly IUsersRepository userRepository;
 
-        public UserController()
+        public UserController(IUsersRepository userRepository)
         {
-            userRepository = new UserRepository(context);
+            this.userRepository = userRepository;
         }
+
         public ActionResult Index()
         {
             IList<UserModel> model = new List<UserModel>();
@@ -127,6 +127,11 @@ namespace Kursovoi_proj.Controllers
         {
             userRepository.Delete(id);
             return RedirectToAction("Index");
+        }
+
+        public IEnumerable<Users> GetAllUsers()
+        {
+            return userRepository.GetAll();
         }
     }
 }

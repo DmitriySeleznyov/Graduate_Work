@@ -4,12 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebPortal_Music.Contracts.DataContracts;
+using WebPortal_Music.Contracts.Interfaces;
 using WebPortal_Music.DAL.DataBase;
 
 namespace Kursovoi_proj.Controllers
 {
     public class HomeController : Controller
     {
+        private readonly IUsersRepository userRepository;
+
+        public HomeController(IUsersRepository userRepository)
+        {
+            this.userRepository = userRepository;
+        }
+
         public ActionResult Index()
         {
             using (var context = new WebPortalContext())
