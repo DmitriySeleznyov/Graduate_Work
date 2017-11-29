@@ -18,11 +18,11 @@ namespace WebPortal_Music.DAL.DataBase
             //Database.Initialize(true);
         }
 
-        public DbSet<User> User { get; set; }
+        public DbSet<User> Users { get; set; }
         public DbSet<Music> Musics { get; set; }
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Singer_Group> Singer_Groups { get; set; }
-        public DbSet<Comment> Comment { get; set; }
+        public DbSet<Comment> Comments { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

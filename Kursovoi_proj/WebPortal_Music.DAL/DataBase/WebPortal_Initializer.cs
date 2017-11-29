@@ -16,7 +16,7 @@ namespace WebPortal_Music.DAL.DataBase
             {
             new User(){ LastName = "Моисеенко", FirstName = "Артем", Email = "tyty@mail.ru", Phone = 0993459595 }
             };
-            userList.ForEach(s => context.User.Add(s));
+            userList.ForEach(s => context.Users.Add(s));
             context.SaveChanges();
 
             var musicList = new List<Music>()
@@ -44,7 +44,7 @@ namespace WebPortal_Music.DAL.DataBase
             {
             new Comment(){ Comment_Description = "Курица ананас", Date_Time = DateTime.Today}
             };
-            commentList.ForEach(s => context.Comment.Add(s));
+            commentList.ForEach(s => context.Comments.Add(s));
             context.SaveChanges();
 
         }

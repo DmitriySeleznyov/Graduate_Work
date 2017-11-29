@@ -45,12 +45,12 @@ namespace Kursovoi_proj.Controllers
         {
             UserModel model = new UserModel();
 
-            var modelClient = userRepository.GetById(id);
-            model.UsersID = modelClient.UsersID;
-            model.FirstName = modelClient.FirstName;
-            model.LastName = modelClient.LastName;
-            model.Email = modelClient.Email;
-            model.Phone = modelClient.Phone;
+            var modelUser = userRepository.GetById(id);
+            model.UsersID = modelUser.UsersID;
+            model.FirstName = modelUser.FirstName;
+            model.LastName = modelUser.LastName;
+            model.Email = modelUser.Email;
+            model.Phone = modelUser.Phone;
             
             return View("DetailsUser", model);
         }
@@ -88,12 +88,12 @@ namespace Kursovoi_proj.Controllers
         {
             UserModel model = new UserModel();
 
-            var modelClient = userRepository.GetById(id);
-            model.UsersID = modelClient.UsersID;
-            model.LastName = modelClient.LastName;
-            model.FirstName = modelClient.FirstName;
-            model.Email = modelClient.Email;
-            model.Phone = modelClient.Phone;
+            var modelUser = userRepository.GetById(id);
+            model.UsersID = modelUser.UsersID;
+            model.LastName = modelUser.LastName;
+            model.FirstName = modelUser.FirstName;
+            model.Email = modelUser.Email;
+            model.Phone = modelUser.Phone;
 
             return View("EditUser", model);
         }

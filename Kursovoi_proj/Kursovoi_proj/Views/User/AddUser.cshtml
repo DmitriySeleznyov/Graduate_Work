@@ -11,7 +11,7 @@
 
 <h2>Добавить данные о новом пользователе</h2>
 
-@using (Html.BeginForm("Add", "Music", FormMethod.Post))
+@using (Html.BeginForm("Add", "User", FormMethod.Post))
 {
     <div class="editor-label">
         @Html.Label("Фамилия", htmlAttributes: new { @class = "control-label" })
@@ -48,4 +48,4 @@
         <input type="submit" class="btn btn-primary" value="Сохранить">
 }
 <br>
-@Html.ActionLink("Назад", "Index", "Music", new { @class = "btn btn-default" })
+@Html.ActionLink("Назад", "Index", "User", new { @class = "btn btn-default" })
