@@ -10,27 +10,27 @@ using WebPortal_Music.DAL.DataBase;
 
 namespace WebPortal_Music.DAL.Repositories
 {
-    public class UserRepository:IUsersRepository
+    public class Singer_GroupRepository: ISinger_GroupRepository
     {
-        internal WebPortalContext db;
-        internal DbSet<User> dbSet;
+         internal WebPortalContext db;
+        internal DbSet<Singer_Group> dbSet;
 
-        public UserRepository(WebPortalContext db)
+        public Singer_GroupRepository(WebPortalContext db)
         {
             this.db = db;
-            this.dbSet = db.Set<User>();
+            this.dbSet = db.Set<Singer_Group>();
         }
-        public virtual IEnumerable<User> GetAll()
+        public virtual IEnumerable<Singer_Group> GetAll()
         {
             var result = dbSet.ToList();
             return result;
         }
-        public virtual User GetById(int id)
+        public virtual Singer_Group GetById(int id)
         {
             return dbSet.Find(id);
         }
 
-        public virtual void Add(User entity)
+        public virtual void Add(Singer_Group entity)
         {
             dbSet.Add(entity);
             db.SaveChanges();
@@ -38,12 +38,12 @@ namespace WebPortal_Music.DAL.Repositories
 
         public virtual void Delete(int id)
         {
-            User entityToDelete = dbSet.Find(id);
+            Singer_Group entityToDelete = dbSet.Find(id);
             Delete(entityToDelete);
             db.SaveChanges();
         }
 
-        public virtual void Delete(User entityToDelete)
+        public virtual void Delete(Singer_Group entityToDelete)
         {
             if (db.Entry(entityToDelete).State == EntityState.Detached)
             {
@@ -53,7 +53,7 @@ namespace WebPortal_Music.DAL.Repositories
             db.SaveChanges();
         }
 
-        public virtual void Update(User entityToUpdate)
+        public virtual void Update(Singer_Group entityToUpdate)
         {
             dbSet.Attach(entityToUpdate);
             db.Entry(entityToUpdate).State = EntityState.Modified;

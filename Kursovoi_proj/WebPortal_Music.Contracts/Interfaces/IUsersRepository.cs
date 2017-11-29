@@ -9,13 +9,13 @@ namespace WebPortal_Music.Contracts.Interfaces
 {
     public interface IUsersRepository
     {
-        IEnumerable<Users> GetAll();
+        IEnumerable<User> GetAll();
 
-        Users GetById(int id);
+        User GetById(int id);
 
-        void Add(Users report);
+        void Add(User report);
 
-        void Update(Users reportWithChanges);
+        void Update(User reportWithChanges);
 
         void Delete(int id);
 

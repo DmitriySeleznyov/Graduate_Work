@@ -11,7 +11,7 @@
 
 <h2>Изменить данные о пользователе</h2>
 
-@using (Html.BeginForm("Edit", "User", FormMethod.Post))
+@using (Html.BeginForm("Edit", "Music", FormMethod.Post))
 {
     @Html.HiddenFor(model => model.UsersID)
     <div class="editor-label">
@@ -49,4 +49,4 @@
         <input type="submit" class="btn btn-primary" value="Сохранить">
 }
 <br>
-@Html.ActionLink("Назад", "Index", "User", new { @class = "btn btn-default" })
+@Html.ActionLink("Назад", "Index", "Music", new { @class = "btn btn-default" })

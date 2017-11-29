@@ -15,7 +15,7 @@ namespace WebPortal_Music.Contracts.DataContracts
         public string Singer { get; set; }//певец или группа
         public DateTime Time { get; set; }
 
-        public ICollection<Comments> Comment { get; set; }
+        public ICollection<Comment> Comment { get; set; }
 
     }
 }

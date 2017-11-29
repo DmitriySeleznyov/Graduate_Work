@@ -12,9 +12,9 @@ namespace WebPortal_Music.DAL.DataBase
     {
         protected override void Seed(WebPortalContext context)
         {
-            var userList = new List<Users>()
+            var userList = new List<User>()
             {
-            new Users(){ LastName = "Моисеенко", FirstName = "Артем", Email = "tyty@mail.ru", Phone = 0993459595 }
+            new User(){ LastName = "Моисеенко", FirstName = "Артем", Email = "tyty@mail.ru", Phone = 0993459595 }
             };
             userList.ForEach(s => context.User.Add(s));
             context.SaveChanges();
@@ -40,9 +40,9 @@ namespace WebPortal_Music.DAL.DataBase
             genreList.ForEach(s => context.Genres.Add(s));
             context.SaveChanges();
 
-            var commentList = new List<Comments>()
+            var commentList = new List<Comment>()
             {
-            new Comments(){ Comment_Description = "Курица ананас", Date_Time = DateTime.Today}
+            new Comment(){ Comment_Description = "Курица ананас", Date_Time = DateTime.Today}
             };
             commentList.ForEach(s => context.Comment.Add(s));
             context.SaveChanges();

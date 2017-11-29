@@ -4,27 +4,27 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using WebPortal_Music.Contracts.DataContracts;
 using WebPortal_Music.Contracts.Interfaces;
 using WebPortal_Music.DAL.DataBase;
 using WebPortal_Music.DAL.Repositories;
 
 namespace Kursovoi_proj.Controllers
 {
-    public class UserController: Controller
+    public class Singer_GroupController: Controller
     {
-        private readonly WebPortalContext context = new WebPortalContext();
-        private readonly IUsersRepository userRepository;
 
-        public UserController()
+        private readonly WebPortalContext context = new WebPortalContext();
+        private readonly ISinger_GroupRepository singerRepository;
+
+        public Singer_GroupController()
         {
-            userRepository = new UserRepository(context);
+            singerRepository = new Singer_GroupRepository(context);
         }
         public ActionResult Index()
         {
-            IList<UserModel> model = new List<UserModel>();
+            IList<Singer_GroupModel> model = new List<Singer_GroupModel>();
 
-            foreach (var item in userRepository.GetAll())
+            foreach (var item in singerRepository.GetAll())
             {
                 model.Add(
                     new UserModel
@@ -51,7 +51,7 @@ namespace Kursovoi_proj.Controllers
             model.LastName = modelClient.LastName;
             model.Email = modelClient.Email;
             model.Phone = modelClient.Phone;
-            
+
             return View("DetailsUser", model);
         }
 
@@ -69,7 +69,7 @@ namespace Kursovoi_proj.Controllers
                 {
                     return View("AddUser", user);
                 }
-                var model = new User();
+                var model = new Users();
                 model.LastName = user.LastName;
                 model.FirstName = user.FirstName;
                 model.Email = user.Email;
@@ -129,4 +129,5 @@ namespace Kursovoi_proj.Controllers
             return RedirectToAction("Index");
         }
     }
+}
 }

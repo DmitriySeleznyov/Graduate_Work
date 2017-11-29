@@ -10,27 +10,27 @@ using WebPortal_Music.DAL.DataBase;
 
 namespace WebPortal_Music.DAL.Repositories
 {
-    public class UserRepository:IUsersRepository
+    public class CommentRepository:ICommentsRepository
     {
         internal WebPortalContext db;
-        internal DbSet<User> dbSet;
+        internal DbSet<Comment> dbSet;
 
-        public UserRepository(WebPortalContext db)
+        public CommentRepository(WebPortalContext db)
         {
             this.db = db;
-            this.dbSet = db.Set<User>();
+            this.dbSet = db.Set<Comment>();
         }
-        public virtual IEnumerable<User> GetAll()
+        public virtual IEnumerable<Comment> GetAll()
         {
             var result = dbSet.ToList();
             return result;
         }
-        public virtual User GetById(int id)
+        public virtual Comment GetById(int id)
         {
             return dbSet.Find(id);
         }
 
-        public virtual void Add(User entity)
+        public virtual void Add(Comment entity)
         {
             dbSet.Add(entity);
             db.SaveChanges();
@@ -38,12 +38,12 @@ namespace WebPortal_Music.DAL.Repositories
 
         public virtual void Delete(int id)
         {
-            User entityToDelete = dbSet.Find(id);
+            Comment entityToDelete = dbSet.Find(id);
             Delete(entityToDelete);
             db.SaveChanges();
         }
 
-        public virtual void Delete(User entityToDelete)
+        public virtual void Delete(Comment entityToDelete)
         {
             if (db.Entry(entityToDelete).State == EntityState.Detached)
             {
@@ -53,7 +53,7 @@ namespace WebPortal_Music.DAL.Repositories
             db.SaveChanges();
         }
 
-        public virtual void Update(User entityToUpdate)
+        public virtual void Update(Comment entityToUpdate)
         {
             dbSet.Attach(entityToUpdate);
             db.Entry(entityToUpdate).State = EntityState.Modified;

@@ -9,13 +9,13 @@ namespace WebPortal_Music.Contracts.Interfaces
 {
     public interface ICommentsRepository
     {
-        IEnumerable<Comments> GetAll();
+        IEnumerable<Comment> GetAll();
 
-        Comments GetById(int id);
+        Comment GetById(int id);
 
-        void Add(Comments report);
+        void Add(Comment report);
 
-        void Update(Comments reportWithChanges);
+        void Update(Comment reportWithChanges);
 
         void Delete(int id);
     }

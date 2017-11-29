@@ -14,7 +14,7 @@ namespace Kursovoi_proj.Controllers
         {
             using (var context = new WebPortalContext())
             {
-                context.User.Add(new Users() { UsersID = 1, FirstName = "About", LastName = "s",Email = "dimkin_7@mail.ru", Phone = 123 });
+                context.User.Add(new User() { UsersID = 1, FirstName = "About", LastName = "s",Email = "dimkin_7@mail.ru", Phone = 123 });
                 var a = context.User;
             }
             return View();

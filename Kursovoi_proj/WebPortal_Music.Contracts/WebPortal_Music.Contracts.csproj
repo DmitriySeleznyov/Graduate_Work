@@ -49,11 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataContracts\Comments.cs" />
+    <Compile Include="DataContracts\Comment.cs" />
     <Compile Include="DataContracts\Genre.cs" />
     <Compile Include="DataContracts\Music.cs" />
     <Compile Include="DataContracts\Singer_Group.cs" />
-    <Compile Include="DataContracts\Users.cs" />
+    <Compile Include="DataContracts\User.cs" />
     <Compile Include="Interfaces\ICommentsRepository.cs" />
     <Compile Include="Interfaces\IGenreRepository.cs" />
     <Compile Include="Interfaces\IMusicRepository.cs" />

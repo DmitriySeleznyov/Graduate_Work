@@ -13,8 +13,8 @@ namespace Web_PortalTest
         {
             mockRoleRepository = new Mock <IUsersRepository>();
             mockRoleRepository.Setup(a => a.Get()).Returns(new List<Role>());
-            mockUserRepository = new Mock<IGenericRepository<User>>();
-            mockUserRepository.Setup(a => a.Get()).Returns(new List<User>());
+            mockUserRepository = new Mock<IGenericRepository<Music>>();
+            mockUserRepository.Setup(a => a.Get()).Returns(new List<Music>());
         }
 
         [TestMethod]
