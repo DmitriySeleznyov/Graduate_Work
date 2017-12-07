@@ -1,0 +1,36 @@
+﻿@using Kursovoi_proj.Models
+
+@model GenreModel
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@{
+    ViewBag.Title = "EditGenre";
+}
+
+<h2>Изменить данные о жанре</h2>
+
+@using (Html.BeginForm("Add", "Genre", FormMethod.Post))
+{
+    <div class="editor-label">
+        @Html.Label("Код жанра", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Genre_Id, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Genre_Id)
+        <br>
+    </div>
+    <div class="editor-label">
+        @Html.Label("Название жанра", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Name_Genre, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Name_Genre)
+        <br>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Сохранить">
+}
+<br>
+@Html.ActionLink("Назад", "Index", "Genre", new { @class = "btn btn-default" })
+

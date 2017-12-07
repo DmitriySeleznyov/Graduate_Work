@@ -1,0 +1,36 @@
+﻿@using Kursovoi_proj.Models
+
+@model IEnumerable<Singer_GroupModel>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Исполнители</h2>
+
+<table class="table">
+    <tr>
+        <th>Название/ФИО</th>
+        <th>Жанр</th>
+        <th>Год основания</th>
+        <th>Действия</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (Singer_GroupModel singer_group in Model)
+        {
+            <tr>
+                <td>@singer_group.Name_Singer</td>
+                <td>@singer_group.Genre</td>
+                <td>@singer_group.Year_Create</td>
+                <td>
+                    @Html.ActionLink("Details", "Details", "Singer_Group", new { id = @singer_group.Singer_id }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Delete", "Delete", "Singer_Group", new { id = @singer_group.Singer_id }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Edit", "Edit", "Singer_Group", new { id = @singer_group.Singer_id }, new { @class = "btn btn-default" })
+                </td>
+            </tr>
+        }
+    }
+</table>
+@Html.ActionLink("Add", "Add", "Singer_Group", new { @class = "btn btn-default" })
+

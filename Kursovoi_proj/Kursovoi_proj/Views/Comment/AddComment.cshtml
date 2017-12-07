@@ -1,0 +1,39 @@
+﻿@using Kursovoi_proj.Models
+
+@model CommentModel
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}
+@{
+    ViewBag.Title = "AddComment";
+}
+
+<h2>Добавить комментарий</h2>
+
+@using (Html.BeginForm("Add", "Comment", FormMethod.Post))
+{
+    <div class="editor-label">
+        @Html.Label("Описания комментария", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Comment_Description, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Comment_Description)
+        <br>
+    </div>
+    <div class="editor-label">
+        @Html.Label("Дата/Время", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Date_Time, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Date_Time)
+        <br>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Сохранить">
+}
+<br>
+@Html.ActionLink("Назад", "Index", "Comment", new { @class = "btn btn-default" })
+
+
+
+

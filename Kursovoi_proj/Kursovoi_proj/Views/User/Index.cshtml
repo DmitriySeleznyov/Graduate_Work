@@ -12,7 +12,7 @@
     <tr>
         <th>Фамилия</th>
         <th>Имя</th>
-        <th>Адрес</th>
+        <th>Email</th>
         <th>Номер телефона</th>
         <th>Действия</th>
     </tr>
@@ -26,9 +26,9 @@
                 <td>@user.Email</td>
                 <td>@user.Phone</td>
                 <td>
-                    @Html.ActionLink("Details", "Details", "Music", new { id = @user.UsersID }, new { @class = "btn btn-default" })
-                    @Html.ActionLink("Delete", "Delete", "Music", new { id = @user.UsersID }, new { @class = "btn btn-default" })
-                    @Html.ActionLink("Edit", "Edit", "Music", new { id = @user.UsersID }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Details", "Details", "User", new { id = @user.UsersID }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Delete", "Delete", "User", new { id = @user.UsersID }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Edit", "Edit", "User", new { id = @user.UsersID }, new { @class = "btn btn-default" })
                 </td>
             </tr>
         }

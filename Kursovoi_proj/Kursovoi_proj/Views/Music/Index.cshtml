@@ -1,0 +1,38 @@
+﻿@using Kursovoi_proj.Models
+
+@model IEnumerable<MusicModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Музыка</h2>
+
+<table class="table">
+    <tr>
+        <th>Навзание песни</th>
+        <th>Исполнители</th>
+        <th>Длительность</th>
+        <th>Действия</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (MusicModel music in Model)
+        {
+            <tr>
+                <td>@music.Name_Song</td>
+                <td>@music.Singer</td>
+                <td>@music.Time;</td>
+                <td>
+                    @Html.ActionLink("Details", "Details", "Music", new { id = @music.Song_Id }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Delete", "Delete", "Music", new { id = @music.Song_Id }, new { @class = "btn btn-default" })
+                    @Html.ActionLink("Edit", "Edit", "Music", new { id = @music.Song_Id }, new { @class = "btn btn-default" })
+                </td>
+            </tr>
+        }
+    }
+</table>
+@Html.ActionLink("Add", "Add", "Music", new { @class = "btn btn-default" })
+
+
+
+

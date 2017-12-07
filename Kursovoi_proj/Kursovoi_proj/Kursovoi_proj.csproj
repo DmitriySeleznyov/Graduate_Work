@@ -183,6 +183,22 @@
     <Content Include="Views\User\AddUser.cshtml" />
     <Content Include="Views\User\DetailsUser.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Music\AddMusic.cshtml" />
+    <Content Include="Views\Music\DetailsMusic.cshtml" />
+    <Content Include="Views\Music\EditMusic.cshtml" />
+    <Content Include="Views\Music\Index.cshtml" />
+    <Content Include="Views\Genre\AddGenre.cshtml" />
+    <Content Include="Views\Genre\DetailsGenre.cshtml" />
+    <Content Include="Views\Genre\EditGenre.cshtml" />
+    <Content Include="Views\Genre\Index.cshtml" />
+    <Content Include="Views\Comment\Index.cshtml" />
+    <Content Include="Views\Comment\AddComment.cshtml" />
+    <Content Include="Views\Comment\EditComment.cshtml" />
+    <Content Include="Views\Comment\DetailsComment.cshtml" />
+    <Content Include="Views\Singer_Group\Index.cshtml" />
+    <Content Include="Views\Singer_Group\AddSinger_Group.cshtml" />
+    <Content Include="Views\Singer_Group\EditSinger_Group.cshtml" />
+    <Content Include="Views\Singer_Group\DetailsSinger_Group.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
