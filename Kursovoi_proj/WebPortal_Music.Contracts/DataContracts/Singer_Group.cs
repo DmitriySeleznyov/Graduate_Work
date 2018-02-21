@@ -12,7 +12,7 @@ namespace WebPortal_Music.Contracts.DataContracts
         [Key]
         public int Singer_id { get; set; }
         public string Name_Singer { get; set; }
-        public string Genre { get; set; }//
+        public string Genre { get; set; }
         public int Year_Create { get; set; }
 
         public ICollection<Music> Musics { get; set; }
