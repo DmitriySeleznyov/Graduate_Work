@@ -1,7 +1,43 @@
-﻿
+﻿@using Kursovoi_proj.Models
+@model Singer_GroupModel 
+{
+@Scripts.Render("~/bundles/jqueryval")
+}
 @{
     ViewBag.Title = "EditSinger_Group";
 }
 
-<h2>EditSinger_Group</h2>
+<h2>Изменения данных</h2>
+
+@using (Html.BeginForm("Edit", "Singer_Group", FormMethod.Post))
+{
+    @Html.HiddenFor(model => model.Singer_id)
+    <div class="editor-label">
+        @Html.Label("Название/ФИО", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Name_Singer, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Name_Singer)
+        <br>
+    </div>
+    <div class="editor-label">
+        @Html.Label("Жанр", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Genre, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Genre)
+        <br>
+    </div>
+    <div class="editor-label">
+        @Html.Label("Год основания", htmlAttributes: new { @class = "control-label" })
+    </div>
+    <div class="editor-field">
+        @Html.EditorFor(model => model.Year_Create, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.Year_Create)
+        <br>
+    </div>
+    <input type="submit" class="btn btn-primary" value="Сохранить">
+}
+<br>
+@Html.ActionLink("Назад", "Index", "Singer_Group", new { @class = "btn btn-default" })
 
